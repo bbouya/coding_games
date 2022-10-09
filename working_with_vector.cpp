@@ -24,7 +24,20 @@ int main(){
     cout << "b = \n";
     for (int i = 0; i<b.size(); i++){
         for(int j = 0; j<b[0].size(); j++){
-            
+            cout << b[i][j] <<"\n";
+
         }
+
     }
+    cout << "\n";
+    // Range based for loop : 
+    cout << "Range based for loop \n";
+    for (auto v:b){
+        for (int i:v){
+            cout << i << " ";
+        }
+        cout << "\n";
+    }
+
+    return 0;
 }
